@@ -1,5 +1,7 @@
 # Subnautica Cloud Saving
 
+**FOREWARNING: I AM NOT RESPONSIBLE IF YOU MESSED YOUR STUFF UP. DO THIS AT YOUR OWN RISK!**
+
 Yes, it's true, there is a way to enable cloud saving for Subnautica!
 
 It is **NOT** built-in to the game, nor is it a steam *feature*.
