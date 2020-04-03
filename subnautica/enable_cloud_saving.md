@@ -38,3 +38,6 @@ Note: I have only tested this with Windows 10, Subnautica for Steam, and OneDriv
  6. **Restoring from backup**
     - If you messed up and need to restore your backup save folder, all you have to do is rename it to `SavedGames`.
     - Keep in mind, if you played and saved to the cloud-saved folder, your backup will not have ANY of those changes. It will be exactly where you were at when you first made the backup.
+
+**Side-note**
+- Avoid quickly swapping between computers, as OneDrive needs a small amount of time to properly sync your files. You can end up losing progress if you don't wait a little bit before switching computers. It is not instant, but it is fairly quick.
