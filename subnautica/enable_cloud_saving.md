@@ -23,12 +23,12 @@ Note: I have only tested this with Windows 10, Subnautica for Steam, and OneDriv
     - Open up an administrator command prompt (Windows Key -> Type 'cmd' -> right click -> click 'run as administrator').
     - Type: 
         ```
-        symlink /D DriveLetter:\Default\Location\To\Subnautica\Saved\Files\Directory\SavedGames DriveLetter:\Your\OneDrive\SavedGames\Folder
+        mklink /D DriveLetter:\Default\Location\To\Subnautica\Saved\Files\Directory\SavedGames DriveLetter:\Your\OneDrive\SavedGames\Folder
         ```
-    - symlink will create the symbolic soft link, /D specifies we're linking a directory
+    - mklink will create the symbolic soft link, /D specifies we're linking a directory
     - If your default game files are as specified before, your command *might* look like this (depending on where you made your OneDrive folder): 
         ```
-        symlink /D "C:\Program Files(x86)\Steam\steamapps\common\Subnautica\SNAppData\SavedGames" C:\Users\artic0de\OneDrive\Games\Subnautica\SavedGames
+        mklink /D "C:\Program Files(x86)\Steam\steamapps\common\Subnautica\SNAppData\SavedGames" C:\Users\artic0de\OneDrive\Games\Subnautica\SavedGames
         ```
     - Notice the quotations marks around `"C:\Program Files(x86)\Steam\steamapps\common\Subnautica\SNAppData\SavedGames"`. This is because `Program Files(x86)` has a space in it. If you type it without the quotation marks, it will give you an error.
     - Remember: the first path in the command is *where the link will be* and the second path is *where the actual directory is*. This link is taking the place of the directory's original location, so the game files will first go to the link which will bring it to your OneDrive folder.
