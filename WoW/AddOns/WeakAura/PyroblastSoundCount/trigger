@@ -13,7 +13,7 @@ function(event, ...)
             if e.count == 0 then
               PlaySoundFile("CustomSound\\Combusting3.ogg")
             elseif e.count == 1 then
-              PlaySoundFile("PowerAurasMedia\\Sounds\\Thunder.ogg")
+              PlaySoundFile("CustomSound\\Thunder.ogg")
             end
 
             e.count = e.count + 1
