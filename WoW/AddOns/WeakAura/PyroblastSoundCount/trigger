@@ -1,0 +1,29 @@
+function(event, ...)
+    local e = aura_env
+    
+    if GetTime() - e.lastCastTime > e.resetTime then
+        e.count = 0
+    end
+
+    local _, subEvent, _, sourceGUID, _, _, _, _, _, _, _, spellId = ...
+    if subEvent == "SPELL_CAST_SUCCESS" and sourceGUID == UnitGUID("player") and spellId == 11366 then
+        if e.get_buffs[e.buffs] and e.get_buffs[e.buffs]() then
+            e.lastCastTime = GetTime()
+
+            if e.count == 0 then
+              PlaySoundFile("CustomSound\\Combusting3.ogg")
+            elseif e.count == 1 then
+              PlaySoundFile("PowerAurasMedia\\Sounds\\Thunder.ogg")
+            end
+
+            e.count = e.count + 1
+        end
+    end
+
+
+    if e.count > 0 then
+        return true
+    else
+        return false
+    end
+end
