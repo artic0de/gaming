@@ -11,9 +11,9 @@ function(event, ...)
             e.lastCastTime = GetTime()
 
             if e.count == 0 then
-              PlaySoundFile("CustomSound\\Combusting3.ogg")
+              PlaySoundFile("CustomSound\\test.ogg")
             elseif e.count == 1 then
-              PlaySoundFile("CustomSound\\Thunder.ogg")
+              PlaySoundFile("CustomSound\\test2.ogg")
             end
 
             e.count = e.count + 1
